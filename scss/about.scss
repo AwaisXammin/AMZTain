@@ -1,0 +1,40 @@
+.page-header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+    url(../img/header-img.jpg);
+  .container-fluid {
+    .heading {
+      text-align: center;
+      padding-top: 115px;
+    }
+  }
+}
+
+.img-txt-section {
+  padding-bottom: 0;
+  .icon-text {
+    p {
+      font-size: 26px;
+      margin-bottom: 15px;
+      img {
+        width: 50px;
+        margin-right: 14px;
+      }
+    }
+  }
+}
+
+.about-2 {
+  padding-bottom: 5%;
+}
+
+.about-3 {
+  .inner-content-row {
+    padding: 35px 35px !important;
+    .icon {
+      margin-bottom: 15px !important;
+    }
+    .content {
+      text-align: center;
+    }
+  }
+}

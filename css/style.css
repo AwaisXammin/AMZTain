@@ -85,6 +85,10 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+h1 {
+  font-size: 88px;
+}
+
 h2 {
   font-size: 65px;
   margin-bottom: 15px;
@@ -322,6 +326,40 @@ header .navbar .navbar-collapse ul li a {
 }
 .cta-section .container-fluid .row .column .content p {
   color: #000;
+}
+
+.page-header {
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/header-img.jpg);
+}
+.page-header .container-fluid .heading {
+  text-align: center;
+  padding-top: 115px;
+}
+
+.img-txt-section {
+  padding-bottom: 0;
+}
+.img-txt-section .icon-text p {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.img-txt-section .icon-text p img {
+  width: 50px;
+  margin-right: 14px;
+}
+
+.about-2 {
+  padding-bottom: 5%;
+}
+
+.about-3 .inner-content-row {
+  padding: 35px 35px !important;
+}
+.about-3 .inner-content-row .icon {
+  margin-bottom: 15px !important;
+}
+.about-3 .inner-content-row .content {
+  text-align: center;
 }
 
 footer {
