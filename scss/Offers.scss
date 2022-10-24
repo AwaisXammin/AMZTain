@@ -1,0 +1,32 @@
+.element-services-section {
+  background: #000;
+  .container-fluid {
+    .heading {
+      text-align: center;
+    }
+
+    .row {
+        padding: 25px 0;
+      .content {
+        padding: 34px 32px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        transition: all 0.3s;
+        &:hover {
+          background: #050505;
+          box-shadow: 0px 0px 30px 0px #c5a76b2b;
+          border: 1px solid #ffffff47;
+        }
+        .image {
+          width: 90px;
+          margin-bottom: 20px;
+        }
+        .text {
+          h4 {
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+  }
+}

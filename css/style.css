@@ -364,6 +364,34 @@ header .navbar .navbar-collapse ul li a {
   text-align: center;
 }
 
+.element-services-section {
+  background: #000;
+}
+.element-services-section .container-fluid .heading {
+  text-align: center;
+}
+.element-services-section .container-fluid .row {
+  padding: 25px 0;
+}
+.element-services-section .container-fluid .row .content {
+  padding: 34px 32px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  transition: all 0.3s;
+}
+.element-services-section .container-fluid .row .content:hover {
+  background: #050505;
+  box-shadow: 0px 0px 30px 0px rgba(197, 167, 107, 0.168627451);
+  border: 1px solid rgba(255, 255, 255, 0.2784313725);
+}
+.element-services-section .container-fluid .row .content .image {
+  width: 90px;
+  margin-bottom: 20px;
+}
+.element-services-section .container-fluid .row .content .text h4 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .testiomoinals-section {
   background: #000;
 }
