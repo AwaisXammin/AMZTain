@@ -27,6 +27,9 @@
       crossorigin="anonymous"
     />
 
+    <!--### AOS Animation ###-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!--### Style Sheet ###-->
     <link rel="stylesheet" href="css/style.css" />
     <title>AMZTain</title>
@@ -85,8 +88,8 @@
     <section class="page-header">
       <div class="container-fluid">
         <div class="heading">
-          <h1>Blog</h1>
-          <p>Home / Blog</p>
+          <h1 data-aos="fade-down" data-aos-delay="300">Blog</h1>
+          <p data-aos="fade-down" data-aos-delay="500">Home / Blog</p>
         </div>
       </div>
     </section>
@@ -95,12 +98,16 @@
     <section class="blog-posts">
       <div class="container-fluid">
         <div class="heading">
-          <h2>Our Latest News</h2>
+          <h2 data-aos="fade-down" data-aos-delay="600">Our Latest News</h2>
         </div>
         <!--### Row ###-->
         <div class="row">
           <!--### Post-1 ###-->
-          <div class="col-md-4 col-sm-4 col-12">
+          <div
+            class="col-md-4 col-sm-4 col-12"
+            data-aos="fade-down"
+            data-aos-delay="800"
+          >
             <div class="post-grid">
               <div class="image">
                 <img src="img/post-1.jpg" alt="Post-1-img" />
@@ -118,7 +125,11 @@
           </div>
 
           <!--### Post-2 ###-->
-          <div class="col-md-4 col-sm-4 col-12">
+          <div
+            class="col-md-4 col-sm-4 col-12"
+            data-aos="fade-down"
+            data-aos-delay="1000"
+          >
             <div class="post-grid">
               <div class="image">
                 <img src="img/post-2.jpg" alt="Post-2-img" />
@@ -137,7 +148,11 @@
           </div>
 
           <!--### Post-3 ###-->
-          <div class="col-md-4 col-sm-4 col-12">
+          <div
+            class="col-md-4 col-sm-4 col-12"
+            data-aos="fade-down"
+            data-aos-delay="1200"
+          >
             <div class="post-grid">
               <div class="image">
                 <img src="img/post-3.jpg" alt="Post-3-img" />
@@ -221,6 +236,54 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <script>
+      // UPDATE: I was able to get this working again... Enjoy!
+
+      var cursor = document.querySelector(".cursor");
+      var cursorinner = document.querySelector(".cursor2");
+      var a = document.querySelectorAll("a");
+
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+      });
+
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursorinner.style.left = x + "px";
+        cursorinner.style.top = y + "px";
+      });
+
+      document.addEventListener("mousedown", function () {
+        cursor.classList.add("click");
+        cursorinner.classList.add("cursorinnerhover");
+      });
+
+      document.addEventListener("mouseup", function () {
+        cursor.classList.remove("click");
+        cursorinner.classList.remove("cursorinnerhover");
+      });
+
+      a.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+          cursor.classList.add("hover");
+        });
+        item.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hover");
+        });
+      });
+    </script>
 
     <!--### Bootstrap Js CDN ###-->
     <script

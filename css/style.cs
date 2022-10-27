@@ -101,11 +101,11 @@ h2 {
   width: fit-content;
   justify-content: center;
   align-items: center;
-  padding: 14px 35px;
+  padding: 19px 35px;
   border-radius: 80px;
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   border: 1px solid #af9057;
   transition: 0.3s all ease;
 }
@@ -219,19 +219,17 @@ header .navbar .navbar-collapse ul li a {
   font-size: 19px;
   margin: 0 10px;
   padding: 40px 22px;
-  border-bottom: 1px solid transparent;
+  background: linear-gradient(#ffffff 0 0) no-repeat var(--p, 200%) 100%/200% var(--p, 0.08em);
+  transition: 0.3s var(--t, 0s), background-position 0.3s calc(0.3s - var(--t, 0s));
 }
 header .navbar .navbar-collapse ul li a:hover {
-  color: #fff !important;
-  border-color: #fff;
+  --p: 100%;
+  --t: 0.3s;
+  color: #000 !important;
 }
 
-header .btn:hover {
-  margin-left: 0px !important;
-}
-header .btn .menu-btn:hover {
+.menu-btn:hover {
   color: #fff;
-  margin-left: 0 !important;
 }
 
 .banner-section {
@@ -875,4 +873,4 @@ footer .container-fluid .footer-bottom .row .copyright p a:hover {
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

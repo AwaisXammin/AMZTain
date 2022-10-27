@@ -10,6 +10,11 @@
         .column-1 {
           padding-top: 60px;
         }
+        .column-2 {
+          .image {
+            margin-top: -140px;
+          }
+        }
         .column {
           .content {
             h1 {
@@ -39,6 +44,29 @@
         }
       }
     }
+  }
+}
+
+.container-2 {
+  overflow: hidden;
+  background: #000;
+  cursor: ew-resize;
+  white-space: nowrap;
+  margin: 0;
+  max-width: 100%;
+}
+
+.title {
+  font: bold normal 12vw/1.2 "Montserrat", sans-serif;
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0 15%;
+  will-change: transform;
+  img {
+    width: 1080px;
+    margin-top: -90px;
   }
 }
 
@@ -108,11 +136,11 @@
 
 .img-txt-section {
   background-color: #000;
-  &:nth-child(odd) {
-    .row {
-      flex-direction: row-reverse;
-    }
-  }
+  // &:nth-child(odd) {
+  //   .row {
+  //     flex-direction: row-reverse;
+  //   }
+  // }
   .container-fluid {
     .row {
       .content {
@@ -127,63 +155,101 @@
   }
 }
 
+.Amazon-Fba {
+  background-color: #000;
+  .roundborder {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    word-wrap: break-word;
+    float: none;
+    margin: 0 auto;
+    background: #000;
+    transition: all 0.5s;
+    &:hover {
+      filter: invert(1);
+    }
+    .roundcontent {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border: 2px dashed rgb(255, 255, 255);
+      border-radius: 100px;
+      -webkit-transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      -webkit-animation: slideDash 10s infinite linear;
+      animation: slideDash 10s infinite linear;
+      -webkit-backface-visibility: hidden;
+    }
+    .roundborder .text {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      top: 14px;
+      left: 14px;
+      padding: 5px;
+      word-wrap: break-word;
+      box-sizing: border-box;
+    }
+    @-webkit-keyframes slideDash {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    .icon {
+      width: 64px;
+      margin: 0 auto;
+      img {
+        margin-top: 40px;
+      }
+    }
+    .text {
+      text-align: center;
+    }
+  }
+}
+
 .product-research {
-  background-color: #142938;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9)),
-    url(../img/product-research-bg.jpg);
+  background-color: #050505;
   .container-fluid {
     .heading {
       text-align: center;
       width: 80%;
       margin: 0 auto;
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
     .row {
-      margin-bottom: 13px;
-      .col-md-4 {
-        width: 32%;
-        margin: 0 auto;
-        .inner-content-row {
-          background: #ffffff05;
-          backdrop-filter: blur(8px);
-          padding: 35px 8px;
-          border-radius: 23px;
-          border: 1px solid #ffffff1a;
-          transition: all 0.3s;
-          &:hover {
-            border-color: $secondry;
-          }
-          .column {
-            padding: 0;
-            .icon {
-              margin-bottom: 22px;
-              width: fit-content;
-              margin: 0 auto;
-              img {
-                width: 75px;
-              }
-            }
-            .content {
-              h5 {
-                text-transform: uppercase;
-                font-weight: 700;
-                background-image: linear-gradient(
-                  135deg,
-                  #f7f7f7 0%,
-                  #bfbfbf 30%,
-                  #f7f7f7 50%,
-                  #bfbfbf 0%,
-                  #f7f7f7 80%,
-                  #bfbfbf 100%
-                );
-                background-size: 100%;
-                background-repeat: repeat;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-size: 27px;
-              }
-            }
-          }
+      margin-bottom: 40px;
+      .main-column {
+        padding: 0 22px;
+      }
+      .image {
+        margin-bottom: 30px;
+        img {
+          border-radius: 25px;
+        }
+      }
+      .content {
+        padding: 0 30px;
+        p {
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
+        h5 {
+          font-size: 34px;
+          color: #ffffffb5;
+          font-weight: 500;
+          line-height: 1;
+          margin-bottom: 11px;
+        }
+        a {
+          font-size: 22px;
+          font-weight: 200;
+          color: rgba(255, 255, 255, 0.6);
+          border-bottom: 1px solid #b4965c;
         }
       }
     }
@@ -191,7 +257,9 @@
 }
 
 .cta-section {
-  background-color: #000;
+  background: url(../img/Bg\ Call\ to\ Action.png);
+  background-size: cover;
+  background-position: bottom;
   .container-fluid {
     .heading {
       width: 80%;
@@ -204,15 +272,7 @@
       margin: 0 auto;
       justify-content: space-evenly;
       .column-1 {
-        background-image: linear-gradient(
-          135deg,
-          #f7f7f7 0%,
-          #bfbfbf 30%,
-          #f7f7f7 50%,
-          #bfbfbf 70%,
-          #f7f7f7 90%,
-          #bfbfbf 100%
-        );
+        background-color: #0000002b;
       }
       .column-2 {
         background-image: linear-gradient(
@@ -230,21 +290,44 @@
         border-radius: 18px;
         text-align: center;
         width: 47%;
+        border: 1px solid #ffffff1f;
+        background: #0000004d;
+        backdrop-filter: blur(114px);
         .icon {
           margin-bottom: 12px;
+          background: #ffffff0f;
+          display: flex;
+          width: fit-content;
+          border-radius: 80px;
+          padding: 10px 30px;
+          margin-bottom: 80px;
           img {
-            width: 56px;
+            width: 21px;
+            height: 20px;
+            filter: invert(1);
+            opacity: 0.7;
+            margin-top: 3px;
+          }
+
+          h6 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 11px;
+            margin-top: 3px;
+            color: rgba(255, 255, 255, 0.6);
           }
           i {
-            font-size: 65px;
-            color: #000;
+            font-size: 25px;
+            color: rgba(255, 255, 255, 0.6);
           }
         }
         .content {
+          text-align: left;
           h4 {
-            font-size: 35px;
-            font-weight: 700;
-            color: #000;
+            font-size: 38px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 12px;
           }
           p {
             color: #000;

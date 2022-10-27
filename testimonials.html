@@ -27,6 +27,9 @@
       crossorigin="anonymous"
     />
 
+    <!--### AOS Animation ###-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!--### Style Sheet ###-->
     <link rel="stylesheet" href="css/style.css" />
     <title>AMZTain</title>
@@ -85,8 +88,8 @@
     <section class="page-header">
       <div class="container-fluid">
         <div class="heading">
-          <h1>Testimonials</h1>
-          <p>Home / Testimonials</p>
+          <h1 data-aos="fade-down" data-aos-delay="300">Testimonials</h1>
+          <p data-aos="fade-down" data-aos-delay="500">Home / Testimonials</p>
         </div>
       </div>
     </section>
@@ -94,11 +97,17 @@
     <section class="testiomoinals-section">
       <div class="container-fluid">
         <div class="heading">
-          <h2>What Our Clients Say</h2>
+          <h2 data-aos="fade-down" data-aos-delay="600">
+            What Our Clients Say
+          </h2>
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-12 col-12">
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
             <div class="content">
               <div class="image">
                 <img src="img/testimonial-4.jpg" alt="Testimonial-Image" />
@@ -129,7 +138,11 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 col-12">
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+          >
             <div class="content">
               <div class="image">
                 <img src="img/testimonial-5.jpg" alt="Testimonial-Image" />
@@ -159,7 +172,11 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 col-12">
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-delay="1200"
+          >
             <div class="content">
               <div class="image">
                 <img src="img/testimonial-6.jpg" alt="Testimonial-Image" />
@@ -190,7 +207,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-12 col-12">
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <div class="content">
               <div class="image">
                 <img src="img/testimonial-1.jpg" alt="Testimonial-Image" />
@@ -225,7 +246,11 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 col-12">
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
             <div class="content">
               <div class="image">
                 <img src="img/testimonial-2.jpg" alt="Testimonial-Image" />
@@ -258,7 +283,11 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 col-12">
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
             <div class="content">
               <div class="image">
                 <img src="img/testimonial-3.jpg" alt="Testimonial-Image" />
@@ -354,6 +383,54 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <script>
+      // UPDATE: I was able to get this working again... Enjoy!
+
+      var cursor = document.querySelector(".cursor");
+      var cursorinner = document.querySelector(".cursor2");
+      var a = document.querySelectorAll("a");
+
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+      });
+
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursorinner.style.left = x + "px";
+        cursorinner.style.top = y + "px";
+      });
+
+      document.addEventListener("mousedown", function () {
+        cursor.classList.add("click");
+        cursorinner.classList.add("cursorinnerhover");
+      });
+
+      document.addEventListener("mouseup", function () {
+        cursor.classList.remove("click");
+        cursorinner.classList.remove("cursorinnerhover");
+      });
+
+      a.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+          cursor.classList.add("hover");
+        });
+        item.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hover");
+        });
+      });
+    </script>
 
     <!--### Bootstrap Js CDN ###-->
     <script

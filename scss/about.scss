@@ -1,13 +1,5 @@
-.page-header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
-    url(../img/header-img.jpg);
-  .container-fluid {
-    .heading {
-      text-align: center;
-      padding-top: 115px;
-    }
-  }
-}
+
+
 .about-1 {
   padding-bottom: 0;
 }
@@ -30,13 +22,34 @@
 }
 
 .about-3 {
+  background-color: black;
+  .heading {
+    text-align: center;
+  }
   .inner-content-row {
     padding: 35px 35px !important;
     .icon {
       margin-bottom: 15px !important;
+      img {
+        width: 80px;
+        margin-bottom: 15px;
+      }
     }
     .content {
-      text-align: center;
+      text-align: left;
+      h5 {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.7098039216);
+        font-weight: 500;
+        line-height: 1.3;
+        margin-bottom: 11px;
+      }
+      a {
+        font-size: 22px;
+        font-weight: 200;
+        color: rgba(255, 255, 255, 0.6);
+        border-bottom: 1px solid #b4965c;
+      }
     }
   }
 }
