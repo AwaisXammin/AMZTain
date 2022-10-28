@@ -8,8 +8,8 @@
       .contact-form {
         width: 65%;
         margin: 0 auto;
-        @media (max-width: 767px) {
-          width: 100%;
+        @media (max-width: 1199px) {
+          width: 100% !important;
         }
         .container {
           padding: 16px;

@@ -1,5 +1,3 @@
-
-
 .about-1 {
   padding-bottom: 0;
 }
@@ -19,6 +17,11 @@
 
 .about-2 {
   padding-bottom: 5%;
+  .content {
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
 }
 
 .about-3 {
@@ -28,6 +31,9 @@
   }
   .inner-content-row {
     padding: 35px 35px !important;
+    @media (max-width: 991px) {
+      padding: 20px 0 !important;
+    }
     .icon {
       margin-bottom: 15px !important;
       img {

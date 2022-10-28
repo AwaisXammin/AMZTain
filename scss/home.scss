@@ -1,18 +1,41 @@
 .banner-section {
+  position: relative;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
     url(../img/Banner-image.jpg);
   padding-bottom: 0px;
   .overlay {
     background: url(../img/banner-background.png);
     padding-top: 220px;
+    @media (max-width: 1199px) {
+      padding-top: 130px;
+    }
+    .banner-inner {
+      position: relative;
+      z-index: 3;
+    }
     .container-fluid {
       .row {
+        @media (max-width: 1199px) {
+          flex-direction: column;
+        }
         .column-1 {
           padding-top: 60px;
+          @media (max-width: 1199px) {
+            padding-top: 0;
+            width: 100%;
+          }
         }
         .column-2 {
+          @media (max-width: 1199px) {
+            width: 100%;
+            margin-top: 0 auto;
+          }
           .image {
             margin-top: -140px;
+            @media (max-width: 1199px) {
+              width: 60%;
+              margin: 0 auto;
+            }
           }
         }
         .column {
@@ -39,12 +62,73 @@
               font-size: 66px;
               margin-top: -20px;
               margin-bottom: 40px;
+              @media (max-width: 991px) {
+                margin-top: 2px;
+                font-size: 50px;
+              }
+              @media (max-width: 575px) {
+                font-size: 40px;
+              }
             }
           }
         }
       }
     }
   }
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .container-2 {
@@ -54,6 +138,9 @@
   white-space: nowrap;
   margin: 0;
   max-width: 100%;
+  @media (max-width: 991px) {
+    display: none;
+  }
 }
 
 .title {
@@ -71,7 +158,10 @@
 }
 
 .video-section {
-  background: #000;
+  // background: #000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+    url(../img/particles-bg.png);
+
   .container-fluid {
     .row {
       text-align: center;
@@ -83,6 +173,9 @@
         margin: 0 auto;
         margin-bottom: 40px;
         position: relative;
+        @media (max-width: 1199px) {
+          width: 100%;
+        }
         &:hover {
           img {
             opacity: 0.2;
@@ -124,6 +217,9 @@
       .body-content {
         width: 60%;
         margin: 0 auto;
+        @media (max-width: 1199px) {
+          width: 90%;
+        }
         .button {
           a {
             margin: 0 auto;
@@ -271,6 +367,12 @@
       width: 74%;
       margin: 0 auto;
       justify-content: space-evenly;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
       .column-1 {
         background-color: #0000002b;
       }
@@ -293,6 +395,10 @@
         border: 1px solid #ffffff1f;
         background: #0000004d;
         backdrop-filter: blur(114px);
+        @media (max-width: 767px) {
+          width: 100%;
+          margin-bottom: 22px;
+        }
         .icon {
           margin-bottom: 12px;
           background: #ffffff0f;

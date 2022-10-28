@@ -4,6 +4,17 @@ footer {
     .footer {
       border-bottom: 1px solid #ffffff26;
       padding: 100px 0;
+      @media (max-width: 767px) {
+        padding-bottom: 30px;
+      }
+      .logo {
+        img {
+          @media (max-width: 767px) {
+            width: 60%;
+            margin-bottom: 20px;
+          }
+        }
+      }
       p {
         font-size: 20px;
         margin-bottom: 2px;
@@ -17,6 +28,9 @@ footer {
     }
     .footer-bottom {
       padding-top: 100px;
+      @media (max-width: 767px) {
+        padding-top: 30px;
+      }
       .row {
         text-align: center;
         .follow-us {

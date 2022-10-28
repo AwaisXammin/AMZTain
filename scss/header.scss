@@ -7,10 +7,16 @@ header {
   border-bottom: 1px solid #ffffff1a;
   width: 100%;
   z-index: 5;
+  @media (max-width: 991px) {
+    padding: 12px 0;
+  }
   .navbar {
     .logo {
       img {
         width: 300px;
+        @media (max-width: 575px) {
+          width: 220px;
+        }
       }
     }
     .navbar-collapse {
@@ -22,6 +28,9 @@ header {
             margin: 0 10px;
             padding: 40px 22px;
             border-bottom: 1px solid transparent;
+            @media (max-width: 991px) {
+              padding: 8px 0;
+            }
 
             // background: linear-gradient(#ffffff 0 0) no-repeat var(--p, 200%)
             //   100% / 200% var(--p, 0.08em);

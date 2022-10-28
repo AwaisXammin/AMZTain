@@ -39,10 +39,22 @@ h3 {
 }
 h1 {
   font-size: 88px;
+  @media (max-width: 991px) {
+    font-size: 65px !important;
+  }
+  @media (max-width: 575px) {
+    font-size: 45px !important;
+  }
 }
 h2 {
   font-size: 65px;
   margin-bottom: 15px;
+  @media (max-width: 991px) {
+    font-size: 45px;
+  }
+  @media (max-width: 575px) {
+    font-size: 32px !important;
+  }
 }
 
 .button {
@@ -152,4 +164,14 @@ a:hover:after {
   width: 50px;
   height: 50px;
   opacity: 0.5;
+}
+
+a {
+  &:hover {
+    color: #fff;
+  }
+}
+
+.aos-init.aos-animate {
+  transition-delay: 0.3s !important;
 }

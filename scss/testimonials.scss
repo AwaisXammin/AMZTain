@@ -11,6 +11,9 @@
         background-color: #050505;
         padding: 30px 44px 5px 44px;
         border-radius: 18px;
+        @media (max-width: 767px) {
+          margin-bottom: 55px;
+        }
 
         .image {
           width: 75px;
