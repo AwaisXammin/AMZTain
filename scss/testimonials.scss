@@ -1,5 +1,5 @@
 .testiomoinals-section {
-  background: #000;
+  background: #fff;
   .container-fluid {
     .heading {
       text-align: center;
@@ -8,7 +8,7 @@
     .row {
       margin-top: 75px;
       .content {
-        background-color: #050505;
+        background-color: #fafafa;
         padding: 30px 44px 5px 44px;
         border-radius: 18px;
         @media (max-width: 767px) {
@@ -42,6 +42,12 @@
             margin-top: 20px;
             margin-bottom: 10px;
           }
+          h5 {
+            color: #1a1a1a;
+          }
+          a {
+            color: #1a1a1a;
+          }
           .country {
             padding-top: 15px;
             p {
@@ -52,6 +58,26 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.video-testimonials {
+  .container-fluid {
+    .row {
+      margin-bottom: 70px;
+      .content {
+        .icon {
+          margin-bottom: 26px;
+          img {
+            width: auto;
+          }
+        }
+        h3 {
+          font-weight: 600;
+          margin-bottom: 20px;
         }
       }
     }

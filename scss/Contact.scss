@@ -1,6 +1,6 @@
 /*### Contact ###*/
 .contact {
-  background: #000;
+  background: #fff;
   .container-fluid {
     /*### Row ###*/
     .row {
@@ -24,8 +24,8 @@
             display: inline-block;
             border: none;
             background: transparent !important;
-            border-bottom: 1px solid #ffffff36;
-            color: rgb(212, 212, 212);
+            border-bottom: 1px solid #00000036;
+            color: rgb(0, 0, 0);
           }
 
           input[type="text"]:focus,
@@ -34,7 +34,7 @@
           textarea {
             background-color: #ddd;
             outline: none;
-            color: rgb(212, 212, 212);
+            color: rgb(0, 0, 0);
           }
 
           .titles {

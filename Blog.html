@@ -37,6 +37,47 @@
   </head>
   <body>
     <header>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-12">
+          <div class="content">
+            <div class="contact-info">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Kolumbusstraße 40 92224
+                Amberg, Germany
+              </div>
+              <div class="email">
+                <a href="mailto:info@amztain@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i>
+                  info@amztain@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-12">
+          <div class="content">
+            <ul class="follow-us">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+            <div class="button">
+              <div class="btn">
+                <a href="Contact.html" class="menu-btn">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
         <div class="logo">
           <a href="index.html">
@@ -66,7 +107,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="Offers.html">Offers</a>
+              <a class="nav-link" href="Offers.html">Our Offers</a>
             </li>
 
             <li class="nav-item">
@@ -78,8 +119,8 @@
             </li>
           </ul>
           <div class="button">
-            <div class="btn">
-              <a href="Contact.html">Contact</a>
+            <div class="btn btn-2">
+              <a href="Contact.html" class="menu-btn">Contact</a>
             </div>
           </div>
         </div>
@@ -89,8 +130,10 @@
     <section class="page-header">
       <div class="container-fluid">
         <div class="heading">
-          <h1 data-aos="fade-down" data-aos-delay="300">Blog</h1>
-          <p data-aos="fade-down" data-aos-delay="500">Home / Blog</p>
+          <h1 class="light" data-aos="fade-down" data-aos-delay="300">Blog</h1>
+          <p class="light" data-aos="fade-down" data-aos-delay="500">
+            Home / Blog
+          </p>
         </div>
       </div>
     </section>
@@ -188,22 +231,26 @@
             <div class="logo">
               <img src="img/AMZTain Logo.png" alt="Logo" />
             </div>
-            <p>For Amazon Fba Seller</p>
+            <div class="contact-info">
+              <p>
+                <i class="fa-solid fa-headphones"></i> Request an initial
+                consultation!
+              </p>
+              <p>
+                <a href="mailto:info@amztain@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i>
+                  info@amztain@gmail.com</a
+                >
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Kolumbusstraße 40 92224
+                Amberg, Germany
+              </p>
+            </div>
           </div>
 
           <div class="col-md-3 col-sm-12 col-12">
-            <p>
-              This site is not a part of the Faceboook TM website or Facebook TM
-              Inc. Additionally, this site isNOT endorsed by FacebookTM in any
-              way. FACEBOOK TM is a trademark of FACEBOOK TM,Inc
-            </p>
-          </div>
-
-          <div class="col-md-3 col-sm-12 col-12">
-            <p>Kolumbusstraße 40 92224 Amberg, Germany</p>
-          </div>
-
-          <div class="col-md-3 col-sm-12 col-12">
+            <h5>Quick Links</h5>
             <ul>
               <li>
                 <p><a href="index.html">Home</a></p>
@@ -219,9 +266,24 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="row">
+
+          <div class="col-md-3 col-sm-12 col-12">
+            <h5>Other Links</h5>
+            <ul>
+              <li>
+                <p><a href="imprint.html">Imprint</a></p>
+              </li>
+              <li>
+                <p><a href="privacy.html">Privacy</a></p>
+              </li>
+              <li>
+                <p><a href="conditions.html">Conditions</a></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-12 col-12">
+            <h5>Social Media:</h5>
             <ul class="follow-us">
               <li>
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -236,8 +298,15 @@
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
             <div class="copyright">
-              <p>© Copyright 2022 AMZTain | Design By <a href="#">Xammin</a></p>
+              <p>
+                © 2016-2022 - AMZTain | Design By
+                <a href="http://xammin.com/" target="_blank">Xammin</a>
+              </p>
             </div>
           </div>
         </div>
@@ -247,49 +316,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
-
-    <script>
-      // UPDATE: I was able to get this working again... Enjoy!
-
-      var cursor = document.querySelector(".cursor");
-      var cursorinner = document.querySelector(".cursor2");
-      var a = document.querySelectorAll("a");
-
-      document.addEventListener("mousemove", function (e) {
-        var x = e.clientX;
-        var y = e.clientY;
-        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
-      });
-
-      document.addEventListener("mousemove", function (e) {
-        var x = e.clientX;
-        var y = e.clientY;
-        cursorinner.style.left = x + "px";
-        cursorinner.style.top = y + "px";
-      });
-
-      document.addEventListener("mousedown", function () {
-        cursor.classList.add("click");
-        cursorinner.classList.add("cursorinnerhover");
-      });
-
-      document.addEventListener("mouseup", function () {
-        cursor.classList.remove("click");
-        cursorinner.classList.remove("cursorinnerhover");
-      });
-
-      a.forEach((item) => {
-        item.addEventListener("mouseover", () => {
-          cursor.classList.add("hover");
-        });
-        item.addEventListener("mouseleave", () => {
-          cursor.classList.remove("hover");
-        });
-      });
     </script>
 
     <!--### Bootstrap Js CDN ###-->
