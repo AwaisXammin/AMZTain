@@ -197,6 +197,11 @@ a:hover:after {
   text-align: center;
   padding-top: 115px;
 }
+@media (max-width: 1024px) {
+  .page-header .container-fluid .heading {
+    padding: 35px 0;
+  }
+}
 
 .cursor {
   width: 50px;
@@ -252,6 +257,12 @@ a:hover {
   color: #fff;
 }
 
+@media (max-width: 425px) {
+  iframe {
+    height: 220px;
+  }
+}
+
 header {
   background-color: #000 !important;
   padding: 0px 0;
@@ -261,6 +272,11 @@ header {
   width: 100%;
   z-index: 5;
 }
+@media (max-width: 1024px) {
+  header {
+    position: relative;
+  }
+}
 @media (max-width: 991px) {
   header {
     padding: 12px 0;
@@ -269,6 +285,11 @@ header {
 header .row {
   background-color: #191919;
   padding: 6px 5%;
+}
+@media (max-width: 1024px) {
+  header .row {
+    display: none;
+  }
 }
 header .row .col-md-6 .content {
   display: flex;
@@ -358,6 +379,11 @@ header .btn .menu-btn:hover {
     width: 100%;
   }
 }
+@media (max-width: 425px) {
+  .banner-section .overlay .row .column-1 {
+    padding: 25px 49px;
+  }
+}
 .banner-section .overlay .row .column-2 {
   padding: 0 !important;
 }
@@ -374,6 +400,11 @@ header .btn .menu-btn:hover {
   .banner-section .overlay .row .column-2 .image {
     width: 60%;
     margin: 0 auto;
+  }
+}
+@media (max-width: 425px) {
+  .banner-section .overlay .row .column-2 .image {
+    width: 100%;
   }
 }
 .banner-section .overlay .row .column .content h1 {
@@ -478,6 +509,11 @@ canvas {
   margin-top: -90px;
 }
 
+@media (max-width: 425px) {
+  .txt-img .container-fluid .row .image {
+    margin-bottom: 25px;
+  }
+}
 .txt-img .container-fluid .row .content .icon-text p img {
   width: 32px;
   margin-right: 10px;
@@ -493,8 +529,18 @@ canvas {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .blurb-section .container-fluid .row {
+    width: 100%;
+  }
+}
 .blurb-section .container-fluid .row .col-md-4 .box {
   padding: 0 15px;
+}
+@media (max-width: 425px) {
+  .blurb-section .container-fluid .row .col-md-4 .box {
+    margin-bottom: 25px;
+  }
 }
 .blurb-section .container-fluid .row .col-md-4 .box .image {
   margin-bottom: 15px;
@@ -518,6 +564,11 @@ canvas {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .team-section .container-fluid .row {
+    width: 100%;
+  }
+}
 .team-section .container-fluid .row .team-1 {
   background: url("../img/Bogdan Schlaffer .jpg");
 }
@@ -537,8 +588,19 @@ canvas {
   background-size: 100%;
   transition: 0.3s all;
 }
+@media (max-width: 425px) {
+  .team-section .container-fluid .row .content {
+    margin-bottom: 25px;
+    height: 480px;
+  }
+}
 .team-section .container-fluid .row .content:hover {
   background-size: 108%;
+}
+@media (max-width: 1024px) {
+  .team-section .container-fluid .row .content {
+    background-size: cover;
+  }
 }
 
 .video-section {
@@ -942,6 +1004,11 @@ canvas {
 .consultation .container-fluid .row .content {
   padding: 80px;
 }
+@media (max-width: 768px) {
+  .consultation .container-fluid .row .content {
+    padding: 0;
+  }
+}
 
 .img-txt-section .icon-text p {
   font-size: 26px;
@@ -1003,6 +1070,11 @@ canvas {
   border: 1px solid rgba(0, 0, 0, 0.2392156863);
   border-radius: 12px;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1490196078);
+}
+@media (max-width: 425px) {
+  .benefits-section .container-fluid .row .content {
+    margin-bottom: 25px;
+  }
 }
 .benefits-section .container-fluid .row .content .image img {
   border-radius: 12px 12px 0 0;
@@ -1143,6 +1215,11 @@ canvas {
 .video-testimonials .container-fluid .row .content h3 {
   font-weight: 600;
   margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .video-testimonials .container-fluid .row .content h3 {
+    font-size: 35px;
+  }
 }
 
 /*### Blog ###*/

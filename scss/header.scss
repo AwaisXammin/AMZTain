@@ -7,6 +7,9 @@ header {
   border-bottom: 1px solid #ffffff1a;
   width: 100%;
   z-index: 5;
+  @media (max-width: 1024px) {
+    position: relative;
+  }
   @media (max-width: 991px) {
     padding: 12px 0;
   }
@@ -14,6 +17,9 @@ header {
   .row {
     background-color: #191919;
     padding: 6px 5%;
+    @media (max-width: 1024px) {
+      display: none;
+    }
     .col-md-6 {
       .content {
         display: flex;

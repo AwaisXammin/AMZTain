@@ -132,6 +132,9 @@ a:hover:after {
     .heading {
       text-align: center;
       padding-top: 115px;
+      @media (max-width: 1024px) {
+        padding: 35px 0;
+      }
     }
   }
 }
@@ -190,4 +193,10 @@ a {
 
 .light {
   color: #fff;
+}
+
+iframe {
+  @media (max-width: 425px) {
+    height: 220px;
+  }
 }
