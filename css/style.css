@@ -557,10 +557,10 @@ canvas {
   background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/Customer-bg.jpg);
 }
 .main-section .container-fluid {
-  padding: 115px 13%;
+  padding: 115px 5%;
 }
 .main-section .container-fluid .row {
-  width: 80%;
+  width: 60%;
 }
 
 .team-section .container-fluid .row {
