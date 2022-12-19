@@ -559,6 +559,9 @@ canvas {
 .main-section .container-fluid {
   padding: 115px 13%;
 }
+.main-section .container-fluid .row {
+  width: 80%;
+}
 
 .team-section .container-fluid .row {
   width: 80%;

@@ -215,6 +215,9 @@ canvas {
     url(../img/Customer-bg.jpg);
   .container-fluid {
     padding: 115px 13%;
+    .row {
+      width: 80%;
+    }
   }
 }
 
