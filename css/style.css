@@ -887,7 +887,7 @@ canvas {
   display: block;
 }
 .our-way .container-fluid .row .container .timeline .timeline-row {
-  padding-left: 20%;
+  padding-left: 0%;
   position: relative;
   margin-bottom: 30px;
 }
@@ -1382,6 +1382,9 @@ canvas {
 /*### Contact-End ###*/
 footer {
   background: #fafafa;
+}
+footer .container-fluid .row .col-md-3 {
+  padding: 0px 30px !important;
 }
 footer .container-fluid .footer {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
