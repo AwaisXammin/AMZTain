@@ -1,13 +1,14 @@
 footer {
-  background: #fafafa;
+  background: #171d24;
   .container-fluid {
+    color: #fff;
     .row {
       .col-md-3 {
         padding: 0px 30px !important;
       }
     }
     .footer {
-      border-bottom: 1px solid rgb(0 0 0 / 15%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
       padding: 100px 0;
 
       @media (max-width: 767px) {
@@ -26,6 +27,7 @@ footer {
       p {
         font-size: 20px;
         margin-bottom: 2px;
+        color: #fff;
         a {
           transition: all 0.3s;
           &:hover {
@@ -44,7 +46,7 @@ footer {
           a {
             i {
               font-size: 16px;
-              color: #181818;
+              color: #fff;
               border: 1px solid;
               width: 45px;
               height: 45px;
@@ -70,10 +72,27 @@ footer {
         .copyright {
           p {
             font-size: 18px;
+            color: #fff;
+            text-align: left;
             a {
               transition: all 0.3s;
+              color: #fff;
               &:hover {
                 color: $primary;
+              }
+            }
+          }
+        }
+
+        .other-links {
+          display: flex;
+          color: #fff;
+          justify-content: end;
+          li {
+            p {
+              a {
+                color: #fff;
+                margin-right: 16px;
               }
             }
           }
