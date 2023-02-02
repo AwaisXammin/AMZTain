@@ -1,0 +1,63 @@
+.career-section {
+  border-bottom: 1px solid #0000001a;
+  .container-fluid {
+    .row {
+      .col-md-6 {
+        padding: 0 60px;
+      }
+    }
+  }
+}
+
+.career-blurb-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)),
+    url(../img/warehouse.jpg);
+  background-position: center;
+  padding: 7% 0;
+  .container-fluid {
+    .headline {
+      h2,
+      p {
+        color: #fff;
+      }
+    }
+    .row {
+      .content {
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.job-section {
+  .container-fluid {
+    .box {
+      border: 1px solid #0000001f;
+      padding: 38px 22px;
+      border-radius: 15px;
+      width: 75%;
+      margin: 30px auto;
+      .button-right {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      .content {
+        .highlight {
+          background: #bca05f1f;
+          padding: 3px 13px;
+          display: inline-block;
+          margin-right: 12px;
+          margin-top: 12px;
+        }
+      }
+      .button {
+        .btn {
+          margin-left: auto !important;
+        }
+      }
+    }
+  }
+}

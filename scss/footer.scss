@@ -25,7 +25,7 @@ footer {
         }
       }
       p {
-        font-size: 20px;
+        font-size: 17px !important;
         margin-bottom: 2px;
         color: #fff;
         a {
@@ -62,16 +62,17 @@ footer {
       }
     }
     .footer-bottom {
-      padding-top: 20px;
+      font-size: 15px;
       @media (max-width: 767px) {
         padding-top: 30px;
       }
       .row {
         text-align: center;
+        padding-top: 18px;
 
         .copyright {
           p {
-            font-size: 18px;
+            font-size: 15px;
             color: #fff;
             text-align: left;
             a {
@@ -90,6 +91,7 @@ footer {
           justify-content: end;
           li {
             p {
+              font-size: 15px;
               a {
                 color: #fff;
                 margin-right: 16px;

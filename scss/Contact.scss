@@ -3,14 +3,48 @@
   background: #fff;
   .container-fluid {
     /*### Row ###*/
-    .row {
+    .main-row {
+      width: 90%;
+      margin: 0 auto;
+      .col-md-6 {
+        @media (max-width: 765px) {
+          margin-bottom: 45px;
+          .contact-form {
+            padding: 15px;
+          }
+        }
+      }
+      .content {
+        h2 {
+          font-size: 42px;
+        }
+        h4 {
+          margin-bottom: 10px;
+        }
+        .follow-us {
+          display: flex;
+          li {
+            a {
+              i {
+                font-size: 16px;
+                border: 1px solid;
+                width: 45px;
+                height: 45px;
+                padding: 14px;
+                border-radius: 50px;
+                margin-right: 15px;
+                &:hover {
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
       /*### Contact-form ###*/
       .contact-form {
-        width: 65%;
-        margin: 0 auto;
-        @media (max-width: 1199px) {
-          width: 100% !important;
-        }
+        background: #f7f7f5;
+        padding: 46px;
         .container {
           padding: 16px;
           /* Full-width input fields */
@@ -39,6 +73,9 @@
 
           .titles {
             text-align: center;
+            h2 {
+              font-size: 42px;
+            }
             p {
               margin-bottom: 0;
             }

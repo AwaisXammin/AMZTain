@@ -14,39 +14,57 @@ header {
     padding: 12px 0;
   }
 
-  .row {
+  .top-bar {
     background-color: #191919;
-    padding: 6px 5%;
+    padding: 6px 0%;
     @media (max-width: 1024px) {
       display: none;
     }
-    .col-md-6 {
-      .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .row {
+      width: 75%;
+      margin: 0 auto;
+      .col-md-6 {
+        .column-1 {
+          justify-content: start;
+        }
+        .column-2 {
+          justify-content: end;
+        }
+        .content {
+          display: flex;
+          align-items: center;
 
-        .contact-info {
-          display: flex;
-          color: #ffffff85;
-          font-size: 14px;
-          .location {
-            margin-right: 20px;
-          }
-        }
-        .follow-us {
-          display: flex;
-          color: #ffffff85;
-          font-size: 14px;
-          margin-right: 30px;
-          li {
-            margin-right: 8px;
-          }
-        }
-        .button {
-          .btn {
+          .contact-info {
+            display: flex;
+            color: #ffffff85;
             font-size: 14px;
-            padding: 5px 49px;
+            .location {
+              margin-right: 20px;
+            }
+          }
+          .follow-us {
+            display: flex;
+            color: #ffffff85;
+            font-size: 14px;
+            margin-right: 30px;
+            li {
+              margin-right: 8px;
+            }
+          }
+          .button {
+            .btn {
+              font-size: 14px;
+              padding: 5px 49px;
+            }
+            .wtsapp {
+              background-image: linear-gradient(
+                12deg,
+                #25cf43 10%,
+                #61fd7d 100%
+              );
+              border: none;
+              padding: 4px 20px;
+            }
           }
         }
       }
@@ -71,7 +89,7 @@ header {
             margin: 0 10px;
             border-bottom: 1px solid transparent;
 
-            padding: 9px 10px;
+            padding: 7px 15px !important;
 
             border-radius: 8px;
 
@@ -91,6 +109,10 @@ header {
               color: #000 !important;
               border-color: $primary;
             }
+
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 15px;
+            color: #ffffffc7;
           }
         }
       }
