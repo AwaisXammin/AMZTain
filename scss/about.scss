@@ -12,6 +12,9 @@
     .row {
       width: 80%;
       margin: 0 auto;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -229,6 +232,11 @@
         padding: 80px;
         @media (max-width: 768px) {
           padding: 0;
+        }
+        p {
+          @media (max-width: 768px) {
+            font-size: 22px !important;
+          }
         }
       }
     }
