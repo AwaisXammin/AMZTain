@@ -1,12 +1,18 @@
 .banner-section {
   // background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
   //   url(../img/Banner-image.jpg);
+  height: 100vh;
   position: relative;
   background: url(../img/main-banner-img-new.jpg);
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 190px 0;
+
+  @media (max-width: 1023px) {
+    height: 100%;
+  }
+
   @media (max-width: 425px) {
     padding: 58px 0;
     background-position: left;
@@ -27,8 +33,14 @@
         flex-direction: column;
       }
       .column-1 {
-        padding-top: 125px;
+        height: 70vh;
+        display: flex;
+        align-items: center;
         padding-left: 14%;
+
+        @media (max-width: 1023px) {
+          height: 100%;
+        }
         @media (max-width: 1199px) {
           padding-top: 0;
           width: 100%;

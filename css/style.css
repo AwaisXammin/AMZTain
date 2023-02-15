@@ -406,12 +406,18 @@ header .btn .menu-btn:hover {
 }
 
 .banner-section {
+  height: 100vh;
   position: relative;
   background: url(../img/main-banner-img-new.jpg);
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 190px 0;
+}
+@media (max-width: 1023px) {
+  .banner-section {
+    height: 100%;
+  }
 }
 @media (max-width: 425px) {
   .banner-section {
@@ -432,8 +438,15 @@ header .btn .menu-btn:hover {
   }
 }
 .banner-section .overlay .row .column-1 {
-  padding-top: 125px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
   padding-left: 14%;
+}
+@media (max-width: 1023px) {
+  .banner-section .overlay .row .column-1 {
+    height: 100%;
+  }
 }
 @media (max-width: 1199px) {
   .banner-section .overlay .row .column-1 {
