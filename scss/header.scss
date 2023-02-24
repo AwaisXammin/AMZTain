@@ -8,7 +8,8 @@ header {
   width: 100%;
   z-index: 5;
   @media (max-width: 1024px) {
-    position: relative;
+    position: fixed;
+    padding: 0 !important;
   }
   @media (max-width: 991px) {
     padding: 12px 0;
@@ -21,8 +22,10 @@ header {
       display: none;
     }
     .row {
-      width: 75%;
-      margin: 0 auto;
+      padding-right: 30px;
+      padding-left: 30px;
+      max-width: 1260px;
+      margin: auto;
       .col-md-6 {
         .column-1 {
           justify-content: start;
@@ -47,6 +50,8 @@ header {
             color: #ffffff85;
             font-size: 14px;
             margin-right: 30px;
+            align-items: center;
+            margin: 0 0 auto;
             li {
               margin-right: 8px;
             }
@@ -63,7 +68,7 @@ header {
                 #61fd7d 100%
               );
               border: none;
-              padding: 4px 20px;
+              padding: 4px 12px;
             }
           }
         }

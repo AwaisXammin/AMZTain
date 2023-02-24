@@ -14,10 +14,14 @@ a {
 }
 
 .container-fluid {
-  // padding: 0 5%;
-  width: 75%;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 1260px;
+  margin: auto;
   @media (max-width: 425px) {
-    width: 90%;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 
@@ -73,6 +77,11 @@ h3 {
       border: 1px solid;
       margin-left: 12px;
     }
+    @media (max-width: 508px) {
+      padding: 10px 20px;
+      font-size: 13px;
+      width: 100%;
+    }
     @media (max-width: 768px) {
       font-size: 15px;
       padding: 10px 18px;
@@ -121,6 +130,9 @@ p {
   color: #181818;
   font-weight: 300;
   margin-bottom: 15px;
+  @media (max-width: 620px) {
+    font-size: 21px;
+  }
 }
 
 a:after {

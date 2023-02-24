@@ -9,13 +9,20 @@
   background-size: cover;
   padding: 190px 0;
 
+  @media (max-width: 548px) {
+    background-position: right;
+    padding-bottom: 47px;
+    padding-top: 230px;
+  }
+
   @media (max-width: 1023px) {
     height: 100%;
   }
 
   @media (max-width: 425px) {
-    padding: 58px 0;
-    background-position: left;
+    padding-bottom: 47px;
+    padding-top: 230px;
+    background-position: right;
   }
   .overlay {
     background: url(../img/banner-background.png);
@@ -36,7 +43,6 @@
         height: 70vh;
         display: flex;
         align-items: center;
-        padding-left: 14%;
 
         @media (max-width: 1023px) {
           height: 100%;
@@ -173,6 +179,22 @@ canvas {
   }
 }
 
+.core-competence {
+  .container-fluid {
+    max-width: none;
+    .row {
+      align-items: center;
+      justify-content: end;
+      @media (max-width: 767px) {
+        justify-content: start;
+      }
+      .text-column {
+        max-width: 606px;
+      }
+    }
+  }
+}
+
 .txt-img {
   .container-fluid {
     .row {
@@ -184,9 +206,16 @@ canvas {
       .content {
         .icon-text {
           p {
+            @media (max-width: 620px) {
+              font-size: 16px;
+              font-weight: 400;
+            }
             img {
               width: 32px;
               margin-right: 10px;
+              @media (max-width: 720px) {
+                width: 23px;
+              }
             }
           }
         }
@@ -202,7 +231,6 @@ canvas {
       margin-bottom: 40px;
     }
     .row {
-      width: 80%;
       margin: 0 auto;
       @media (max-width: 1024px) {
         width: 100%;
@@ -236,8 +264,11 @@ canvas {
     url(../img/testimonials-bg.jpg);
   background-size: cover;
   background-position: center;
+  @media (max-width: 424px) {
+    background-position: right;
+  }
   .container-fluid {
-    padding: 115px 5%;
+    padding: 115px 30px;
     @media (max-width: 768px) {
       padding: 40px 5%;
     }
@@ -253,16 +284,30 @@ canvas {
 .team-section {
   .container-fluid {
     .row {
-      width: 65%;
       margin: 0 auto;
       @media (max-width: 1024px) {
         width: 100%;
       }
       .team-1 {
         background: url("../img/Bogdan\ Schlaffer\ .jpg");
+        @media (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+        h3 {
+          @media (max-width: 641px) {
+            font-size: 38px;
+            font-weight: 500;
+          }
+        }
       }
       .team-2 {
         background: url("../img/Jenny\ Wolf.jpg");
+        h3 {
+          @media (max-width: 641px) {
+            font-size: 38px;
+            font-weight: 500;
+          }
+        }
       }
       .content {
         height: 650px;
