@@ -467,6 +467,11 @@ header .btn .menu-btn:hover {
     flex-direction: column;
   }
 }
+@media (max-width: 351px) {
+  .banner-section .overlay .row {
+    padding-top: 67px;
+  }
+}
 .banner-section .overlay .row .column-1 {
   height: 70vh;
   display: flex;
@@ -485,7 +490,12 @@ header .btn .menu-btn:hover {
 }
 @media (max-width: 425px) {
   .banner-section .overlay .row .column-1 {
-    padding: 25px 49px;
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 351px) {
+  .banner-section .overlay .row .column-1 {
+    padding: 0 9px;
   }
 }
 .banner-section .overlay .row .column-2 {

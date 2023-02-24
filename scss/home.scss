@@ -39,6 +39,9 @@
       @media (max-width: 1199px) {
         flex-direction: column;
       }
+      @media (max-width: 351px) {
+        padding-top: 67px;
+      }
       .column-1 {
         height: 70vh;
         display: flex;
@@ -52,7 +55,11 @@
           width: 100%;
         }
         @media (max-width: 425px) {
-          padding: 25px 49px;
+          padding: 7px 10px;
+        }
+
+        @media (max-width: 351px) {
+          padding: 0 9px;
         }
       }
       .column-2 {
