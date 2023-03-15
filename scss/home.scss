@@ -82,6 +82,7 @@
       }
       .column {
         .content {
+          margin-top: 190px;
           h1 {
             font-size: 88px;
             color: #c2a665;
@@ -212,13 +213,14 @@ canvas {
       }
       .content {
         .icon-text {
+          margin: 30px 0 !important;
           p {
             @media (max-width: 620px) {
               font-size: 16px;
               font-weight: 400;
             }
             img {
-              width: 32px;
+              width: 24px;
               margin-right: 10px;
               @media (max-width: 720px) {
                 width: 23px;

@@ -9,3 +9,9 @@ $white: white;
 
 /*--### Font Family ###--*/
 $font: "League Spartan", sans-serif;
+$header-font: "Arial", sans-serif;
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial.ttf");
+}

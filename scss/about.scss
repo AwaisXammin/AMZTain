@@ -221,6 +221,16 @@
           }
         }
       }
+
+      .col-md-6 {
+        .image {
+          img {
+            object-fit: cover;
+            height: 814px;
+            margin-left: 60px;
+          }
+        }
+      }
     }
   }
 }
@@ -237,6 +247,15 @@
           @media (max-width: 768px) {
             font-size: 22px !important;
           }
+        }
+      }
+
+      .image {
+        img {
+          object-fit: cover;
+          height: 536px;
+          margin-left: -118px;
+          width: 623px;
         }
       }
     }
