@@ -71,6 +71,10 @@ h3 {
     font-weight: 400;
     border: 1px solid #af9057;
     transition: 0.3s all ease;
+
+    @media (max-width: 532px) {
+      text-transform: none !important;
+    }
     &:hover {
       background: transparent;
       color: #fff;
@@ -123,6 +127,10 @@ section {
   @media (max-width: 425px) {
     padding: 10% 0;
   }
+
+  @media (max-width: 532px) {
+    padding: 70px 20px;
+  }
 }
 
 p {
@@ -157,11 +165,18 @@ a:hover:after {
     url(../img/header-img.jpg);
   background-position: center;
   padding: 7% 0;
+  @media (max-width: 683px) {
+    padding-top: 142px;
+    padding-bottom: 50px;
+  }
   .container-fluid {
     .heading {
       width: 48%;
       text-align: center;
       padding-top: 145px;
+      @media (max-width: 683px) {
+        width: 70%;
+      }
 
       h1,
       p {

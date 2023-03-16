@@ -228,6 +228,11 @@
             object-fit: cover;
             height: 814px;
             margin-left: 60px;
+            @media (max-width: 767px) {
+              width: 100%;
+              height: fit-content;
+              margin: 23px 0;
+            }
           }
         }
       }
@@ -256,6 +261,11 @@
           height: 536px;
           margin-left: -118px;
           width: 623px;
+          @media (max-width: 767px) {
+            width: 100%;
+            height: fit-content;
+            margin: 23px 0;
+          }
         }
       }
     }
